@@ -15,7 +15,7 @@ Run `pnpm dev` to start the app
 
 ### Documentation
 
-[UI Components Documentation at ShadCN UI](https://docs.shadcn.com)
+[UI Components Documentation at ShadCN UI](https://ui.shadcn.com/docs)
 
 ### Screenshots
 ![img1](docs/img1.jpg)
