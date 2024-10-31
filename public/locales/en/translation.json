@@ -1,0 +1,28 @@
+{
+  "cta": {
+    "cancel": "Cancel",
+    "goBack": "Go Back",
+    "continue": "Continue",
+    "done": "Done"
+  },
+  "getStartedDisclaimer": {
+    "title": "Important Legal Notice",
+    "description": "This tool is solely an aid to organize information about your cryptocurrency transactions. It does not constitute tax, legal, or financial advice.",
+    "pointsTitle": "By using this tool, you acknowledge that:",
+    "points": [
+      "The calculations are indicative and must be verified by a qualified tax professional.",
+      "Cryptocurrency tax legislation may change and it is your responsibility to stay informed about current regulations.",
+      "Data is processed locally in your browser and is not stored or transmitted to any server.",
+      "It is your responsibility to verify the accuracy of all data declared to the Tax Agency.",
+      "The creator of this tool assumes no responsibility for errors or omissions in your tax declarations.",
+      "For personalized advice, consult with a qualified tax professional."
+    ],
+    "cta": "Accept and continue"
+  },
+  "assistant": {
+    "exchange": {
+      "title": "Choose Your Exchange",
+      "description": "To get started, please select the exchange where you have conducted your cryptocurrency transactions."
+    }
+  }
+}

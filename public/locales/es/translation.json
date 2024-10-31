@@ -1,0 +1,22 @@
+{
+  "cta": {
+    "cancel": "Cancelar",
+    "goBack": "Volver",
+    "continue": "Continuar",
+    "done": "Listo"
+  },
+  "getStartedDisclaimer": {
+    "title": "Aviso Legal Importante",
+    "description": "Esta herramienta es únicamente una ayuda para organizar la información de sus transacciones con criptomonedas. No constituye asesoramiento fiscal, legal o financiero.",
+    "pointsTitle": "Al utilizar esta herramienta, usted reconoce que:",
+    "points": [
+      "Los cálculos son orientativos y deben ser verificados por un profesional fiscal cualificado.",
+      "La legislación fiscal sobre criptomonedas puede cambiar y es su responsabilidad mantenerse informado sobre la normativa vigente.",
+      "Los datos se procesan localmente en su navegador y no se almacenan ni transmiten a ningúno servidor.",
+      "Es su responsabilidad verificar la exactitud de todos los datos declarados ante la Agencia Tributaria.",
+      "El creador de esta herramienta no asume ninguna responsabilidad por errores u omisiones en sus declaraciones fiscales.",
+      "Para un asesoramiento personalizado, consulte con un profesional fiscal cualificado."
+    ],
+    "cta": "Aceptar y continuar"
+  }
+}
