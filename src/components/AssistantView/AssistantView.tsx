@@ -7,7 +7,7 @@ const AssistantProviderSteps = () => {
   const { steps, activeStepIndex } = useAssistantContext()
 
   return (
-    <Card className="m-6">
+    <Card className="m-6" data-testid="AssistantView:container">
       <CardHeader className="pb-0 pt-6">
         <StepCounter steps={steps} activeStepIndex={activeStepIndex} />
       </CardHeader>

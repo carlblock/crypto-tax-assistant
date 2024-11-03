@@ -51,6 +51,7 @@ const GetStartedDisclaimerContent = ({
           size="lg"
           type="button"
           onClick={onClickAccept}
+          data-testid="GetStartedDisclaimerContent:button_accept"
         >
           {t('getStartedDisclaimer.cta')} <ArrowRight />
         </Button>
@@ -78,7 +79,10 @@ const GetStartedDisclaimer = () => {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <Button variant="default">
+          <Button
+            variant="default"
+            data-testid="GetStartedDisclaimer:button_cta"
+          >
             Get started
             <ArrowRight />
           </Button>
@@ -96,7 +100,7 @@ const GetStartedDisclaimer = () => {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <Button variant="default">
+        <Button variant="default" data-testid="GetStartedDisclaimer:button_cta">
           Get Started <ArrowRight />
         </Button>
       </DrawerTrigger>
@@ -107,7 +111,12 @@ const GetStartedDisclaimer = () => {
         </DrawerHeader>
         <DrawerFooter className="pt-2">
           <DrawerClose asChild>
-            <Button variant="outline">{t('cta.cancel')}</Button>
+            <Button
+              variant="outline"
+              data-testid="GetStartedDisclaimer:button_cancel"
+            >
+              {t('cta.cancel')}
+            </Button>
           </DrawerClose>
         </DrawerFooter>
       </DrawerContent>
