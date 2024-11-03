@@ -36,7 +36,8 @@ pnpm run test:ui
 ### Documentation
 
 [UI Components Documentation at ShadCN UI](https://ui.shadcn.com/docs)
-[Playwright Documentation](https://playwright.dev]
+
+[Playwright Documentation](https://playwright.dev)
 
 ### Screenshots
 ![img1](docs/img1.jpg)
