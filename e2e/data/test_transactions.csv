@@ -1,0 +1,7 @@
+"txid","refid","time","type","subtype","aclass","asset","wallet","amount","fee","balance"
+"LI4P2T","FHXuGIn","2024-07-23 16:31:40","transfer","spotfromfutures","currency","BTC","spot / main",0.0894257200,0,0.0894257200
+"LREY6Y","FHMvfWL","2024-07-23 16:31:44","transfer","spotfromfutures","currency","BCH","spot / main",0.0894262700,0,0.0894262700
+"LWST6R","T6YZIB","2024-10-31 12:22:34","trade","","currency","BTC","spot / main",-0.0008942500,0,0.0885314700
+"LHUYRZ","T6YZIB","2024-10-31 12:22:34","trade","","currency","EUR","spot / main",59.2912,0.2372,59.0540
+"LA6NUF","T375BA","2024-10-31 12:25:05","trade","","currency","EUR","spot / main",-40.1494,0.1004,18.8042
+"LLA7S3","T375BA","2024-10-31 12:25:05","trade","","currency","BTC","spot / main",0.0006057500,0,0.0891372200

@@ -20,12 +20,23 @@ const ExchangeSelector = ({
 
   return (
     <Select onValueChange={onSelect}>
-      <SelectTrigger className="sm:w-full md:max-w-[180px]">
-        <SelectValue placeholder="Crypto Exchange" />
+      <SelectTrigger
+        className="sm:w-full md:max-w-[180px]"
+        data-testid="ExchangeSelect:trigger_main"
+      >
+        <SelectValue
+          placeholder="Crypto Exchange"
+          data-testid="ExchangeSelect:value_display"
+        />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent data-testid="ExchangeSelect:content_options">
         {Object.entries(EXCHANGES).map(([key, value]) => (
-          <SelectItem key={key} value={key} disabled={key !== 'kraken'}>
+          <SelectItem
+            key={key}
+            value={key}
+            disabled={key !== 'kraken'}
+            data-testid={`ExchangeSelect:option_${key}`}
+          >
             {value}
           </SelectItem>
         ))}

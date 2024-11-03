@@ -33,6 +33,7 @@ const ExchangeStep = () => {
           className="w-full md:w-auto"
           onClick={() => setActiveStepIndex(activeStepIndex + 1)}
           disabled={!exchange}
+          data-testid="ExchangeStep:button_continue"
         >
           <Check /> {t('cta.continue')}
         </Button>

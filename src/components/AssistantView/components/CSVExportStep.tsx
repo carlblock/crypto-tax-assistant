@@ -29,7 +29,7 @@ const CSVExportStep = () => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div>
+        <div data-testid="CSVExportStep:instructions">
           <ol className="space-y-6">
             <li className="flex items-start space-x-3">
               <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600">
@@ -107,6 +107,7 @@ const CSVExportStep = () => {
         <Button
           className="w-full md:w-auto"
           onClick={() => setActiveStepIndex(activeStepIndex + 1)}
+          data-testid="CSVExportStep:button_continue"
         >
           <Check /> {t('cta.continue')}
         </Button>

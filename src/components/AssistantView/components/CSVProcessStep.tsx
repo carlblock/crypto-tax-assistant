@@ -66,6 +66,7 @@ const CSVProcessStep = () => {
               type="file"
               accept="text/csv, .csv"
               onChange={onChangeFile}
+              data-testid="CSVProcessStep:input_file"
             />
           </div>
           <div className="mt-6 space-y-2 text-sm text-gray-600 dark:text-slate-400">
@@ -92,6 +93,7 @@ const CSVProcessStep = () => {
           className="w-full md:w-auto"
           onClick={onClickContinue}
           disabled={!file}
+          data-testid="CSVProcessStep:button_continue"
         >
           <Check /> {t('cta.continue')}
         </Button>
