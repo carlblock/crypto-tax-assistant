@@ -5,10 +5,10 @@ with their crypto tax declaration process in Spain
 
 
 ## TODO
- - [] Improve client documentation for exactly what field to fill
- - [] Add better error handling for potential malformed data
- - [] Put i18n in place everywhere
- - [] Add a toggle for dark mode
+ - [ ] Improve client documentation for exactly what field to fill
+ - [ ] Add better error handling for potential malformed data
+ - [ ] Put i18n in place everywhere
+ - [ ] Add a toggle for dark mode
 
 ## Installation
 
