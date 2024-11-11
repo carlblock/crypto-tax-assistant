@@ -10,18 +10,13 @@ with their crypto tax declaration process in Spain
  - [ ] Put i18n in place everywhere
  - [ ] Add a toggle for dark mode
 
-## Installation
+## Installation & Usage
 
 [PNPM package manager](https://pnpm.io) is preferred due to its benefits in performance and workspace handling
 
 1. Step one: `pnpm install`
 2. Step two: `pnpm run dev`
 3. Done! 🚀
-
-### Getting Started
-
-Run `pnpm dev` to start the app
-
 
 ## Testing E2E
 
@@ -31,8 +26,6 @@ pnpm run test
 pnpm run test:ui
 ```
 
-
-
 ### Documentation
 
 [UI Components Documentation at ShadCN UI](https://ui.shadcn.com/docs)
@@ -40,5 +33,6 @@ pnpm run test:ui
 [Playwright Documentation](https://playwright.dev)
 
 ### Screenshots
+![img3](docs/img3.jpg)
 ![img1](docs/img1.jpg)
 ![img2](docs/img2.jpg)
