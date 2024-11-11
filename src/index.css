@@ -31,3 +31,10 @@ body {
   margin: 0 auto;
   @apply p-2 w-full;
 }
+
+
+/* TODO: Move this */
+.CardInfo svg {
+  width: inherit;
+  height: inherit;
+}
