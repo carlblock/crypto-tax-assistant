@@ -17,6 +17,39 @@
       "El creador de esta herramienta no asume ninguna responsabilidad por errores u omisiones en sus declaraciones fiscales.",
       "Para un asesoramiento personalizado, consulte con un profesional fiscal cualificado."
     ],
-    "cta": "Aceptar y continuar"
+    "cta": "Aceptar y continuar",
+    "assistant": {
+      "exchange": {
+        "title": "Elige tu Exchange",
+        "description": "Para comenzar, selecciona el exchange donde has realizado tus transacciones de criptomonedas."
+      }
+    },
+    "main": {
+      "title": "Asistente para Impuestos de Criptomonedas",
+      "description": "Simplifica tu declaración de impuestos de criptomonedas en España con nuestra herramienta segura basada en navegador",
+      "cardPrivate": {
+        "title": "100% Privado",
+        "description": "Tus datos nunca salen de tu dispositivo. Todo el procesamiento ocurre localmente en tu navegador."
+      },
+      "cardSimple": {
+        "title": "Proceso Simple",
+        "description": "Simplemente sube tu archivo CSV del exchange y obtén tus cálculos fiscales al instante."
+      },
+      "cardTaxReady": {
+        "title": "Listo para Impuestos",
+        "description": "Obtén tus datos formateados según los requisitos de la declaración del Modelo 100 español."
+      },
+      "howItWorks": {
+        "title": "Cómo Funciona",
+        "steps": [
+          "Exporta tu historial de transacciones en CSV desde tu exchange de criptomonedas",
+          "Sube el archivo a nuestra herramienta (procesado completamente en tu navegador)",
+          "Obtén tus cálculos fiscales y la información lista para el Modelo 100"
+        ]
+      },
+      "footer": {
+        "claimSupported": "Actualmente compatible con exportaciones de Kraken."
+      }
+    }
   }
 }

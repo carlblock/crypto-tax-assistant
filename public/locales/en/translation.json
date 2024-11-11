@@ -24,5 +24,32 @@
       "title": "Choose Your Exchange",
       "description": "To get started, please select the exchange where you have conducted your cryptocurrency transactions."
     }
+  },
+  "main": {
+    "title": "Crypto Tax Assistant",
+    "description": "Simplify your Spanish cryptocurrency tax declaration with our secure,\n browser-based tool",
+    "cardPrivate": {
+      "title": "100% Private",
+      "description": "Your data never leaves your device. All processing happens locally\n in your browser."
+    },
+    "cardSimple": {
+      "title": "Simple Process",
+      "description": "Just upload your exchange CSV file and get your tax calculations\n instantly."
+    },
+    "cardTaxReady": {
+      "title": "Tax Ready",
+      "description": "Get your data formatted for Spanish Modelo 100 declaration\n requirements."
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": [
+        "Export your transaction history CSV from your crypto exchange",
+        "Upload the file to our tool (processed entirely in your browser)",
+        "Get your tax calculations and Modelo 100 ready information"
+        ]
+    },
+    "footer": {
+      "claimSupported": "Currently supporting Kraken exchange exports."
+    }
   }
 }
