@@ -5,8 +5,9 @@ with their crypto tax declaration process in Spain
 
 
 ## TODO
- - [ ] Improve client documentation for exactly what field to fill
- - [ ] Add better error handling for potential malformed data
+ - [x] Improve client documentation for exactly what field to fill
+ - [x] Replace custom parser with a more robust csv-parse library
+ - [x] Add better error handling for potential malformed data
  - [ ] Put i18n in place everywhere
  - [ ] Add a toggle for dark mode
 
