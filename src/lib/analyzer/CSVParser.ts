@@ -1,28 +1,83 @@
-import { Transaction } from '@/lib/analyzer/types'
+import { parse } from 'csv-parse/browser/esm/sync'
+import type { Options } from 'csv-parse'
 
+interface Transaction {
+  txid: string
+  refid: string
+  time: string
+  type: string
+  subtype: string
+  aclass: string
+  asset: string
+  wallet: string
+  amount: number
+  fee: number
+  balance: number
+}
 class CSVParser {
-  public static parse(csvContent: string): Transaction[] {
-    const lines = csvContent.split('\n')
-    const headers = lines[0].split(',').map((h) => h.replace(/"/g, '').trim())
+  private static readonly parserOptions: Options = {
+    columns: true,
+    skip_empty_lines: true,
+    trim: true,
+    cast: true,
+    bom: true,
+    cast_date: false,
+  }
 
-    return lines
-      .slice(1)
-      .filter((line) => line.trim())
-      .map((line) => {
-        const values = line.split(',').map((v) => v.replace(/"/g, '').trim())
-        return headers.reduce<Partial<Transaction>>((obj, header, index) => {
-          const newObj = { ...obj }
-          // Type assertions for numeric fields
-          if (header === 'amount' || header === 'fee' || header === 'balance') {
-            newObj[header as keyof Transaction] = parseFloat(
-              values[index],
-            ) as any
-          } else {
-            newObj[header as keyof Transaction] = values[index] as any
+  public static parse(csvContent: string): Transaction[] {
+    try {
+      const records = parse(csvContent, this.parserOptions)
+
+      return records.map((record: any, index: number) => {
+        // Cast numeric fields manually
+        const parsedRecord = {
+          ...record,
+          amount: parseFloat(record.amount),
+          fee: parseFloat(record.fee),
+          balance: parseFloat(record.balance),
+        }
+
+        // Validate required fields
+        const requiredFields = [
+          'txid',
+          'refid',
+          'time',
+          'type',
+          'amount',
+          'fee',
+          'balance',
+        ]
+        for (const field of requiredFields) {
+          if (!(field in parsedRecord)) {
+            throw new Error(
+              `Missing required field "${field}" at row ${index + 1}`,
+            )
           }
-          return newObj
-        }, {}) as Transaction
+        }
+
+        // Validate numeric fields
+        for (const field of ['amount', 'fee', 'balance']) {
+          if (isNaN(parsedRecord[field])) {
+            throw new Error(
+              `Invalid number format for "${field}" at row ${index + 1}`,
+            )
+          }
+        }
+
+        // Validate date format
+        if (!parsedRecord.time.match(/^\d{4}-\d{2}-\d{2}/)) {
+          throw new Error(`Invalid date format at row ${index + 1}`)
+        }
+
+        return parsedRecord as Transaction
       })
+    } catch (error) {
+      if (error instanceof Error) {
+        throw new Error(`CSV parsing error: ${error.message}`)
+      }
+      throw error
+    }
   }
 }
+
 export default CSVParser
